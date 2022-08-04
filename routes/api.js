@@ -28,7 +28,7 @@ module.exports = function (app) {
       }
 
       if (translation == text || !translation) {
-        res.json({ text, translation: text })
+        res.json({ text, translation: "Everything looks good to me!" })
       } else {
         res.json({ text, translation: translation[1] })
       }
